@@ -148,7 +148,7 @@ input[type=text], input[type=password] {
   text-align: center;
   background: rgb(136, 133, 133);
   bottom: 0px;
-  width: 97.8%;
+  width: 100%;
   display: block;
   position: fixed;
 }
@@ -203,10 +203,10 @@ input[type=text], input[type=password] {
                <label for="toggle">&#9776;</label>
                 <input type="checkbox" id="toggle">
                 <div class="menu">
-              <a href="#"><span>Login</span></a>
-              <a href="signup.html">Signup</a>
-              <!--- <a href="services.html">Services</a>
-              <a href="faqs.html">FAQs</a> -->
+              <a href="#"><span>Home</span></a>
+              <a href="#">About Us</a>
+              <a href="#">Services</a>
+              <a href="#">FAQs</a>
               </div>
         </div>
   </div>
@@ -214,20 +214,22 @@ input[type=text], input[type=password] {
 <div class="central">
   <div class="leftcolumn">
     <div class="card">
-      <h4>Hello, Login to check progress of your efforts to fight injustice!</h4>
+      <h4>Hello, Signup to keep truck of your efforts to fight injustice!</h4>
       <img src="images/Stop-Corruption.jpg"/>
 </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
       <div class="form" id="form1">
-            <h1><span style='color: red'>L</span><span style='color: blue'>ogin</span></h1>
+            <h1><span style='color: red'>S</span><span style='color: blue'>ignup</span></h1>
             <p>Please fill in this form to create account</p>
-            <form class="login_form" id="login" action="" method="post">
+            <form class="register_form" id="register" action="" method="post">
+                    <input type="text" placeholder="username" id="username" name="username" required/>
                     <input type="text" placeholder="user@email.com or 0700000000" id="email" name="email" required>
                     <input type="password" placeholder="password" id="pass" name="password" required/>
+                    <input type="password" placeholder="confirm password" id="confpass" name="confirmpassword" required/>
                     <button>Create</button>
-                    <p class="message">Not Registered? <a href="signup.html" onchange="dispuser(this.form.username.value)">Signup Here</a>
+                    <p class="message">Already Registered?<a href="login.html" onchange="dispuser(this.form.username.value)">Login Here</a>
                     </p>
 
             </form>
